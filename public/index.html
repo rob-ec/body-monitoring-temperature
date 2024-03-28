@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTM - Body Temperature Monitoring</title>
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <img src="assets/img/logo.svg" alt="Termometer Symbol" width="50px">
+        <h1>BTM</h2>
+        <p class="subtitle">Body Temperature Monitoring</p>
+      </header>
+      <main class="content">
+        <div class="">
+          <form
+            action=""
+            class="btm-form"
+            method="post"
+            enctype="multipart/form-data"
+            id="form-body-temperature-monitoring"
+          >
+            <div class="form-input">
+              <label
+                for="data-body-temperature-monitoring"
+                class="drop-container"
+                id="btm-drop-file-container"
+              >
+                <span class="drop-title">Drop files here</span>
+                or
+                <input
+                  type="file"
+                  id="data-body-temperature-monitoring"
+                  name="data-body-temperature-monitoring"
+                  accept=".csv, .txt"
+                  required
+                />
+              </label>
+            </div>
+            <div class="form-input">
+              <input class="btn" type="submit" value="Carregar Dados" />
+            </div>
+          </form>
+        </div>
+
+        <div class="chart">
+          <canvas id="chart-body-temperature-monitoring"></canvas>
+        </div>
+        <div id="btm-table-container" class="table-container"></div>
+      </main>
+      <footer class="footer">
+        <p>
+          <small>
+            Created by <a href="https://robsongomes.me">Robson Gomes</a>
+          </small>
+        </p>
+      </footer>
+    </div>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+    integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="assets/js/TemperatureMonitoring.js"></script>
+  <script src="assets/js/BTMTable.js"></script>
+  <script src="assets/js/BodyTemperatureChart.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

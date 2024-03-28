@@ -49,3 +49,9 @@ Contributions are welcome! If you have any ideas for improvements or new feature
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Demo
+![demo.png](demo/demo.png)
+
+### Moving
+![demo.gif](demo/demo.gif)
